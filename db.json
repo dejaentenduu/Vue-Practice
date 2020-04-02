@@ -1,4 +1,4 @@
-[  
+{ "jobs":[  
   {
   "id": "1A",
   "name": "Placement Pull",
@@ -55,3 +55,4 @@
     "active": "true"
   }
 ]
+}
