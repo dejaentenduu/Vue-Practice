@@ -1,0 +1,57 @@
+{  
+  {
+    id: '1A',
+    name: 'Placement Pull',
+    entity: 'YNH',
+    type: 'SFTP',
+    jobClass: '1',
+    jobMinute: '0',
+    jobHour: '2',
+    jobDay: '0',
+    jobMonth: '*',
+    jobDayWeek: '*',
+    next: '3/30/2020',
+    active: 'false',
+    jobArgs: [
+      { name: 'SFTP Name', value: 'link' },
+      { name: 'SFTP Folder', value: '/Clients/YNH/Placement Files/' },
+      { name: 'Local Folder', value: 'Z:/Clients/Yale/SFTP Mirror/Placements' },
+      { name: 'File Mask', value: 'LRRPlacement_*' },
+      { name: 'Remove', value: 'remove' }]
+  },
+  {
+    id: '2B',
+    name: 'Transaction Pull',
+    entity: 'YNH',
+    type: 'SFTP',
+    jobClass: '1',
+    jobMinute: '0',
+    jobHour: '18',
+    jobDay: '30',
+    jobMonth: '*',
+    jobDayWeek: '*',
+    next: '3/10/2020',
+    active: 'true',
+    jobArgs: [
+      { name: 'SFTP Name', value: 'link' },
+      { name: 'SFTP Folder', value: '/Clients/YNH/Transaction Files/' },
+      { name: 'Local Folder', value: 'Z:/Clients/Yale/SFTP Mirror/Transactions' },
+      { name: 'File Mask', value: '' },
+      { name: 'Remove', value: 'remove' }]
+  },
+  {
+    id: '3C',
+    name: 'Placement Clean',
+    entity: 'YNH',
+    type: 'Clean',
+    jobClass: '2',
+    jobMinute: '0',
+    jobHour: '18',
+    jobDay: '30',
+    jobMonth: '*',
+    jobDayWeek: '*',
+    next: '4/1/2020',
+    jobArgs: [],
+    active: 'true'
+  }
+}
